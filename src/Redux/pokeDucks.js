@@ -37,7 +37,6 @@ export const pokeDetalleAccion = (url = "https://pokeapi.co/api/v2/pokemon/1") =
     }
     try {
         const res = await axios.get(url)
-        console.log(res.data)
         dispatch({
             type: POKE_INFO_EXITO,
             payload:{ 
